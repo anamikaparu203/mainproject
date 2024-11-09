@@ -7,7 +7,7 @@ const foodSchema = new mongoose.Schema({
         quantity:Number,           
         foodName:String,                          
         date: { type: Date, default: Date.now }, 
-        money:Number              
+        amount:Number              
     });
     
     const foodData = mongoose.model('foods', foodSchema); 

@@ -9,7 +9,12 @@ import Register from './components/Register';
 import About from './components/About';
 import Sign from './components/sign'
 import Home from './components/Home'
-
+import Welcome from './components/Welcome'
+import Program from './components/Program'
+import Resource from './components/Resource'
+import Food from './components/food'
+import Dress from './components/Dress'
+import Medicine from './components/Medicine'
 function App() {
   
 
@@ -23,6 +28,12 @@ function App() {
     <Route path='/Register'element={<Register/>}/>
     <Route path='/login'element={<Sign/>}/>
     <Route path='/Home'element={<Home/>}/>
+    <Route path='/Welcome' element={<Welcome/>}/>
+    <Route path='/Program' element={<Program/>}/>
+    <Route path='/Resource'element={<Resource/>}></Route>
+    <Route path='/Food' element={<Food/>}/>
+    <Route path='/Dress' element={<Dress/>}/>
+    <Route path='/Medicine'element={<Medicine/>}/>
     </Routes>
      
 
