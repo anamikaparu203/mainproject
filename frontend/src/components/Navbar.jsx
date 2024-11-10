@@ -13,7 +13,7 @@ function bar() {
           <Nav className="me-auto">
             <Nav.Link as={Link}to="#Home">Home</Nav.Link>
             <Nav.Link as={Link} to="/About">About</Nav.Link>
-            <Nav.Link href="#Projects">Projects</Nav.Link>
+            
             <Nav.Link  as={Link}to="/Program">Program</Nav.Link>
             <Nav.Link as={Link} to="/Register">Sponsorship</Nav.Link>
             <Nav.Link href="#Contact">Contact</Nav.Link>

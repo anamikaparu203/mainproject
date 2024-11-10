@@ -30,19 +30,19 @@
 
 import React from 'react'
 import image from'../assets/images/orphan.jpg'
+import { useNavigate } from 'react-router'
 
 const Home = () => {
+const navigate=useNavigate();
   return (
-    <div><img src={image} /></div>
+    <div className="App"><img src={image} alt="Orphan support"  style={{ width: '1500px', height: '500px',}}  />
+    <h2></h2>
+  </div>
+  
   )
+ 
+
 }
 
 export default Home
-
-
-
-
-
-
-
 
