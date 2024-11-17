@@ -116,9 +116,9 @@ function Sign() {
           </Button>
         </form>
         <Box display="flex" justifyContent="center" marginTop="10px">
-          <Link href="/forgot-password" variant="body2">
+          {/* <Link href="/forgot-password" variant="body2">
             Forgot Password?
-          </Link>
+          </Link> */}
         </Box>
       </Box>
     </Container>

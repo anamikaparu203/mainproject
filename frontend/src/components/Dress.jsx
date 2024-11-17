@@ -109,8 +109,228 @@
 // export default Dress;
 
 
+// import React, { useState } from 'react';
+// import { TextField, Button, Typography } from '@mui/material';
+// import { useNavigate } from 'react-router-dom';
+
+// const Dress = () => {
+//   const navigate = useNavigate();
+
+//   // State to store form input
+//   const [formData, setFormData] = useState({
+//     girlsDress: '',
+//     boysDress: '',
+//     date: new Date().toISOString().substring(0, 10), // Default to today's date
+//     money: '',
+//   });
+
+//   // Handle input changes
+//   const handleInputChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData((prevData) => ({
+//       ...prevData,
+//       [name]: value,
+//     }));
+//   };
+
+//   // Handle form submission
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     console.log(formData); // Log form data; replace with submission logic if needed
+//   };
+
+//   // Navigate back to the welcome page
+//   const handleBackClick = () => {
+//     navigate('/welcome'); // Adjust this path based on your routing setup
+//   };
+
+//   return (
+//     <div style={{ padding: '20px' }}>
+//       <Typography variant="h4">Dress Resources</Typography>
+//       <Typography variant="body1" paragraph>
+//         Enter the details of the dress resources below.
+//       </Typography>
+
+//       {/* Form to input dress details */}
+//       <form onSubmit={handleSubmit}>
+//         <TextField
+//           label="Girls' Dress"
+//           name="girlsDress"
+//           type="number"
+//           value={formData.girlsDress}
+//           onChange={handleInputChange}
+//           fullWidth
+//           margin="normal"
+//         />
+//         <TextField
+//           label="Boys' Dress"
+//           name="boysDress"
+//           type="number"
+//           value={formData.boysDress}
+//           onChange={handleInputChange}
+//           fullWidth
+//           margin="normal"
+//         />
+//         <TextField
+//           label="Date"
+//           name="date"
+//           type="date"
+//           value={formData.date}
+//           onChange={handleInputChange}
+//           fullWidth
+//           margin="normal"
+//           InputLabelProps={{ shrink: true }}
+//         />
+//         <TextField
+//           label="Money"
+//           name="money"
+//           type="number"
+//           value={formData.money}
+//           onChange={handleInputChange}
+//           fullWidth
+//           margin="normal"
+//         />
+
+//         {/* Submit button */}
+//         <Button variant="contained" color="primary" type="submit" style={{ marginTop: '20px' }}>
+//           Submit
+//         </Button>
+
+//         {/* Back button */}
+//         <Button
+//           variant="contained"
+//           color="secondary"
+//           onClick={handleBackClick}
+//           style={{ marginTop: '20px', marginLeft: '10px' }}
+//         >
+//           Back
+//         </Button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default Dress;
+
+
+// import React, { useState } from 'react';
+// import { TextField, Button, Typography, Alert } from '@mui/material';
+// import { useNavigate } from 'react-router-dom';
+
+// const Dress = () => {
+//   const navigate = useNavigate();
+
+//   // State to store form input
+//   const [formData, setFormData] = useState({
+//     girlsDress: '',
+//     boysDress: '',
+//     date: new Date().toISOString().substring(0, 10), // Default to today's date
+//     money: '',
+//   });
+
+//   const [successMessage, setSuccessMessage] = useState(''); // State to store success message
+
+//   // Handle input changes
+//   const handleInputChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData((prevData) => ({
+//       ...prevData,
+//       [name]: value,
+//     }));
+//   };
+
+//   // Handle form submission
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     console.log(formData); // Log form data; replace with submission logic if needed
+//     setSuccessMessage('Dress details submitted successfully!'); // Set success message
+//   };
+
+//   // Navigate back to the welcome page
+//   const handleBackClick = () => {
+//     navigate('/welcome'); // Adjust this path based on your routing setup
+//   };
+
+//   return (
+//     <div style={{ padding: '20px' }}>
+//       <Typography variant="h4">Dress Resources</Typography>
+//       <Typography variant="body1" paragraph>
+//         Enter the details of the dress resources below.
+//       </Typography>
+
+//       {/* Show success message */}
+//       {successMessage && (
+//         <Alert severity="success" style={{ marginBottom: '20px' }}>
+//           {successMessage}
+//         </Alert>
+//       )}
+
+//       {/* Form to input dress details */}
+//       <form onSubmit={handleSubmit}>
+//         <TextField
+//           label="Girls' Dress"
+//           name="girlsDress"
+//           type="number"
+//           value={formData.girlsDress}
+//           onChange={handleInputChange}
+//           fullWidth
+//           margin="normal"
+//         />
+//         <TextField
+//           label="Boys' Dress"
+//           name="boysDress"
+//           type="number"
+//           value={formData.boysDress}
+//           onChange={handleInputChange}
+//           fullWidth
+//           margin="normal"
+//         />
+//         <TextField
+//           label="Date"
+//           name="date"
+//           type="date"
+//           value={formData.date}
+//           onChange={handleInputChange}
+//           fullWidth
+//           margin="normal"
+//           InputLabelProps={{ shrink: true }}
+//         />
+//         <TextField
+//           label="Money"
+//           name="money"
+//           type="number"
+//           value={formData.money}
+//           onChange={handleInputChange}
+//           fullWidth
+//           margin="normal"
+//         />
+
+//         {/* Submit button */}
+//         <Button variant="contained" color="primary" type="submit" style={{ marginTop: '20px' }}>
+//           Submit
+//         </Button>
+
+//         {/* Back button */}
+//         <Button
+//           variant="contained"
+//           color="secondary"
+//           onClick={handleBackClick}
+//           style={{ marginTop: '20px', marginLeft: '10px' }}
+//         >
+//           Back
+//         </Button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default Dress;
+
+
+
+
 import React, { useState } from 'react';
-import { TextField, Button, Typography } from '@mui/material';
+import { TextField, Button, Typography, Alert } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 const Dress = () => {
@@ -123,6 +343,8 @@ const Dress = () => {
     date: new Date().toISOString().substring(0, 10), // Default to today's date
     money: '',
   });
+
+  const [successMessage, setSuccessMessage] = useState(''); // State to store success message
 
   // Handle input changes
   const handleInputChange = (e) => {
@@ -137,6 +359,7 @@ const Dress = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData); // Log form data; replace with submission logic if needed
+    setSuccessMessage('Dress details submitted successfully!'); // Set success message
   };
 
   // Navigate back to the welcome page
@@ -145,70 +368,75 @@ const Dress = () => {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
-      <Typography variant="h4">Dress Resources</Typography>
-      <Typography variant="body1" paragraph>
-        Enter the details of the dress resources below.
-      </Typography>
+    <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
+      <div style={{ maxWidth: '500px', width: '100%' }}>
+        <Typography variant="h4" align="center" gutterBottom>
+          Dress Resources
+        </Typography>
+        <Typography variant="body1" paragraph align="center">
+          Enter the details of the dress resources below.
+        </Typography>
 
-      {/* Form to input dress details */}
-      <form onSubmit={handleSubmit}>
-        <TextField
-          label="Girls' Dress"
-          name="girlsDress"
-          type="number"
-          value={formData.girlsDress}
-          onChange={handleInputChange}
-          fullWidth
-          margin="normal"
-        />
-        <TextField
-          label="Boys' Dress"
-          name="boysDress"
-          type="number"
-          value={formData.boysDress}
-          onChange={handleInputChange}
-          fullWidth
-          margin="normal"
-        />
-        <TextField
-          label="Date"
-          name="date"
-          type="date"
-          value={formData.date}
-          onChange={handleInputChange}
-          fullWidth
-          margin="normal"
-          InputLabelProps={{ shrink: true }}
-        />
-        <TextField
-          label="Money"
-          name="money"
-          type="number"
-          value={formData.money}
-          onChange={handleInputChange}
-          fullWidth
-          margin="normal"
-        />
+        {/* Show success message */}
+        {successMessage && (
+          <Alert severity="success" style={{ marginBottom: '20px' }}>
+            {successMessage}
+          </Alert>
+        )}
 
-        {/* Submit button */}
-        <Button variant="contained" color="primary" type="submit" style={{ marginTop: '20px' }}>
-          Submit
-        </Button>
+        {/* Form to input dress details */}
+        <form onSubmit={handleSubmit}>
+          <TextField
+            label="Girls' Dress"
+            name="girlsDress"
+            type="number"
+            value={formData.girlsDress}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Boys' Dress"
+            name="boysDress"
+            type="number"
+            value={formData.boysDress}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Date"
+            name="date"
+            type="date"
+            value={formData.date}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+            InputLabelProps={{ shrink: true }}
+          />
+          <TextField
+            label="Money"
+            name="money"
+            type="number"
+            value={formData.money}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+          />
 
-        {/* Back button */}
-        <Button
-          variant="contained"
-          color="secondary"
-          onClick={handleBackClick}
-          style={{ marginTop: '20px', marginLeft: '10px' }}
-        >
-          Back
-        </Button>
-      </form>
+          {/* Submit button */}
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+            <Button variant="contained" color="primary" type="submit" style={{ marginRight: '10px' }}>
+              Submit
+            </Button>
+            <Button variant="contained" color="secondary" onClick={handleBackClick}>
+              Back
+            </Button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
 
 export default Dress;
-

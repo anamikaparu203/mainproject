@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
+
 // import { useNavigate } from 'react-router';
 
 const Register = () => {
@@ -125,3 +126,4 @@ const Register = () => {
 };
 
 export default Register
+

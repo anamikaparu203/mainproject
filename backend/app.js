@@ -3,10 +3,13 @@ const dotenv = require("dotenv");
 const morgan=require('morgan');
 const app =new express;
 const cors=require('cors')
+// const bodyparser=require('body-parser')
 app.use(cors());
+// app.use(bodyparser.json)
 app.use(morgan('dev'));
 
 app.use(express.json());
+
 
 const food = require("./routes/food");
 app.use("/api/food",food);
@@ -22,6 +25,9 @@ app.use("/api/dress",dress);
 
 const stationary=require("./routes/stationary")
 app.use("/api/stationary",stationary)
+
+const contact=require("./routes/contact")
+app.use('/',require('./routes/contact'));
 
 require('dotenv').config();
 const PORT=process.env.PORT;

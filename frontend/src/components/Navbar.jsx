@@ -7,16 +7,16 @@ import { Link } from 'react-router-dom';
 function bar() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar bg="light" data-bs-theme="light">
         <Container>
-          {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
+          <Navbar.Brand href="#home"> Orphan Life Foundation</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={Link}to="#Home">Home</Nav.Link>
+            <Nav.Link as={Link}to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/About">About</Nav.Link>
             
             <Nav.Link  as={Link}to="/Program">Program</Nav.Link>
             <Nav.Link as={Link} to="/Register">Sponsorship</Nav.Link>
-            <Nav.Link href="#Contact">Contact</Nav.Link>
+            <Nav.Link as={Link}to="/Contact">Contact</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

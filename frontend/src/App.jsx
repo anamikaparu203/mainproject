@@ -16,6 +16,8 @@ import Food from './components/food'
 import Dress from './components/Dress'
 import Medicine from './components/Medicine'
 import Stationary from './components/Stationary'
+import Contact from './components/Contact'
+
 function App() {
  return (
   
@@ -32,7 +34,7 @@ function App() {
     {/* <Route path='/Sponsor' element={<Sponsor />} /> */}
     <Route path='/Register'element={<Register/>}/>
     <Route path='/login'element={<Sign/>}/>
-    <Route path='/Home'element={<Home/>}/>
+    <Route path='/'element={<Home/>}/>
     <Route path='/Welcome' element={<Welcome/>}/>
     <Route path='/Program' element={<Program/>}/>
     <Route path='/Resource'element={<Resource/>}></Route>
@@ -41,6 +43,7 @@ function App() {
     <Route path='/Medicine'element={<Medicine/>}/>
     <Route path='/Stationary'element={<Stationary/>}/>
     <Route path='/Sign'element={<Sign/>}/>
+     <Route path='/Contact'element={<Contact/>}/>
     </Routes>
      </div>
 

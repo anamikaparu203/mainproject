@@ -22,6 +22,9 @@ router.post("/register", async (req, res) => {
         const newUser = new User({ name, email, password });
         await newUser.save();
 
+    
+
+
         res.status(201).json({ msg: "User registered successfully" });
     } catch (error) {
         console.error(error); // Log error for debugging
@@ -30,3 +33,5 @@ router.post("/register", async (req, res) => {
 });
 
 module.exports = router;
+
+
