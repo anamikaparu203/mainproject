@@ -6,7 +6,7 @@ import edu from'../assets/images/edu.jpg';
 import medical from'../assets/images/medical.jpg';
 
 const Program= () => {
-  // Define the sections as tabs
+  
   return (
     <Container className="about-page mt-5">
       <center><h1>Program</h1></center><br />
@@ -45,13 +45,7 @@ const Program= () => {
                 <h2>A majority of our projects fall completely in line with our key objectives.</h2>
                 <p>
                 Every year, millions of individuals help support communities in need through organizing fundraisers, setting up donation programs and holding community service events. Orphan Life Foundation has been recognizing those areas which require attention through the following programs:
-                  {/* <img 
-                  src={auguste} 
-                  alt="Board Members" 
-                  style={{ width: '50%', height: '120', marginBottom: '20px' }} 
-                /> */}
-
-
+                 
                 </p>
 
                 
@@ -117,12 +111,7 @@ In collaboration with local non-profit organizations and local authorities, betw
                 <p>
                 
 <p>To collect and distribute usable clothing and shoes to needy orphans, primarily targeting communities where children face extreme weather conditions without proper clothing.  </p>
-                  {/* <img 
-                  src={edu} 
-                  alt="Program" 
-                  style={{ width: '50%', height: '120', marginBottom: '20px' }} 
-                /> */}
-                
+                  
                  
 
 <h2>What we do</h2>

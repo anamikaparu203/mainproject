@@ -109,11 +109,11 @@ const About= () => {
 
                 
 
-<p>Rupal Shah currently serves as the Vice President of the Orphan Life Foundation. Rupal has an extensive background in charitable efforts including seats on various charity boards including Junior Achievement NJ, an organization which provides education to underprivileged children, New Eyes for the Needy, an organization which provides glasses to the disadvantaged and most recently Essex County Family Justice who provides resources for victims of domestic violence. Rupal aspires to help those in need.
+               <p>Rupal Shah currently serves as the Vice President of the Orphan Life Foundation. Rupal has an extensive background in charitable efforts including seats on various charity boards including Junior Achievement NJ, an organization which provides education to underprivileged children, New Eyes for the Needy, an organization which provides glasses to the disadvantaged and most recently Essex County Family Justice who provides resources for victims of domestic violence. Rupal aspires to help those in need.
 
-Rupal holds a BS from Rutgers University and an MBA from the New York University, Stern Business School. She currently works at PGIM Fixed Income in their Client Advisory Group.</p>
+               Rupal holds a BS from Rutgers University and an MBA from the New York University, Stern Business School. She currently works at PGIM Fixed Income in their Client Advisory Group.</p>
             
-<img 
+               <img 
                   src={rupal} 
                   alt="Board Members" 
                   style={{ width: '50%', height: '120', marginBottom: '20px' }} 
@@ -125,11 +125,11 @@ Rupal holds a BS from Rutgers University and an MBA from the New York University
             <p>We achieve this by cultivating a safe and efficient teaching environment, providing basic school supplies, reducing the level of educational disparity, and reducing or better yet eliminating the barriers orphans face for schooling.</p>
             
             <h2>Mary Ellen Cavanaugh</h2>
-Treasurer
+            Treasurer
 
-,<p>Mary Ellen Cavanaugh serves on the board of directors and as Treasurer of Orphan Life Foundation. Mary Ellen has been involved and supported many projects with nonprofits for several years, including American Cancer Society, Susan G. Komen Foundation and Samaritan’s Purse - Operation Christmas Child. She hopes to use her passion and skillset to support the objectives of Orphan Life Foundation to better the lives of orphans around the world.
+           <p>Mary Ellen Cavanaugh serves on the board of directors and as Treasurer of Orphan Life Foundation. Mary Ellen has been involved and supported many projects with nonprofits for several years, including American Cancer Society, Susan G. Komen Foundation and Samaritan’s Purse - Operation Christmas Child. She hopes to use her passion and skillset to support the objectives of Orphan Life Foundation to better the lives of orphans around the world.
 
-Mary Ellen graduated from Mount Saint Mary College with a BS in Business Management and Administration. She has over 20 years of experience in senior finance related roles. She has experience in both public and private organizations, domestic and international sectors, around various industries. The companies she has supported are Lucent Technologies, Tiffany & Co., The Louis Berger Group, and Aquestive Therapeutics, Inc. to name a few. Mary Ellen is currently the Treasurer at Wejo Inc.</p>
+          Mary Ellen graduated from Mount Saint Mary College with a BS in Business Management and Administration. She has over 20 years of experience in senior finance related roles. She has experience in both public and private organizations, domestic and international sectors, around various industries. The companies she has supported are Lucent Technologies, Tiffany & Co., The Louis Berger Group, and Aquestive Therapeutics, Inc. to name a few. Mary Ellen is currently the Treasurer at Wejo Inc.</p>
                   <img 
                   src={mary} 
                   alt="Board Members" 

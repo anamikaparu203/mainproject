@@ -3,9 +3,9 @@ const dotenv = require("dotenv");
 const morgan=require('morgan');
 const app =new express;
 const cors=require('cors')
-// const bodyparser=require('body-parser')
+
 app.use(cors());
-// app.use(bodyparser.json)
+
 app.use(morgan('dev'));
 
 app.use(express.json());

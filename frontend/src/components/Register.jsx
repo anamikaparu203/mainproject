@@ -1,13 +1,12 @@
-// src/components/RegisterPage.jsx
 
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 
-// import { useNavigate } from 'react-router';
+
 
 const Register = () => {
-  // const navigate=useNavigate();
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,15 +26,15 @@ const Register = () => {
     setErrorMessage('');
     setSuccessMessage('');
 
-    // Check if passwords match
+    
     if (formData.password !== formData.confirmPassword) {
       setErrorMessage("Passwords do not match");
       return;
     }
 
     try {
-      // Send POST request to register the user
-      const response = await axios.post('http://localhost:5000/api/user/register', {
+      
+      const response = await axios.post('http://localhost:4000/api/user/register', {
         name: formData.name,
         email: formData.email,
         password: formData.password,

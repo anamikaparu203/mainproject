@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// Contact Schema
+
 const ContactSchema = new mongoose.Schema({
   organization: { type: String, required: true },
   address: {
@@ -14,7 +14,7 @@ const ContactSchema = new mongoose.Schema({
   description: { type: String, required: true },
 });
 
-// Create the Contact model
+
 const Contact = mongoose.model('Contacts', ContactSchema);
 
 module.exports = Contact;
